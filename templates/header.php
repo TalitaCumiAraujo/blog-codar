@@ -18,14 +18,14 @@ include_once("data/categories.php");
 <body>
 <header>
       <a href="<?= $BASE_URL?>" id="logo">
-<img src="<?=$BASE_URL ?>/images/logo.svg" alt="Logo blog hora de codar">
+<img src="<?=$BASE_URL ?>/img/logo.svg" alt="Logo blog hora de codar">
 </a>
 <nav>
       <ul id="navbar">
             <li><a href="<?=$BASE_URL ?>">Home</a></li>
             <li><a href="#">Categorias</a></li>
             <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="<?= $BASE_URL ?>contato.php">Contato</a></li>
       </ul>
 </nav>
 </header>

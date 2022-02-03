@@ -1,15 +1,15 @@
 <?php
-include_once("templates/header.php");
+  include_once("templates/header.php");
 ?>
-<main>
-<div id="title-container">
+  <main>
+    <div id="title-container">
       <h1>Blog Codar</h1>
       <p>O seu blog de programação</p>
     </div>
     <div id="posts-container">
       <?php foreach($posts as $post): ?>
         <div class="post-box">
-          <img src="<?= $BASE_URL ?>/images/<?= $post['images'] ?>" alt="<?= $post['title'] ?>">
+          <img src="<?= $BASE_URL ?>/img/<?= $post['img'] ?>" alt="<?= $post['title'] ?>">
           <h2 class="post-title">
             <a href="<?= $BASE_URL ?>post.php?id=<?= $post['id'] ?>"><?= $post['title'] ?></a>
           </h2>
@@ -22,7 +22,7 @@ include_once("templates/header.php");
         </div>
       <?php endforeach; ?>
     </div>
-</main>
+  </main>
 <?php
-include_once("templates/footer.php");
+  include_once("templates/footer.php")
 ?>
